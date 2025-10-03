@@ -1,0 +1,167 @@
+/* General CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #162938;
+}
+
+/* Form styling */
+form {
+    width: 80%;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form controls styling */
+form select, form input[type="text"], form button {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Styling for the search input and buttons */
+form input[type="text"] {
+    flex-grow: 1;
+}
+
+form button {
+    background-color: #162938;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1a2d4d;
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.button {
+    background-color: #162938; /* Dark blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin: 0 10px; /* Space between buttons */
+    font-size: 16px; /* Font size for text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.button:hover {
+    background-color: #1a2d4d; /* Darker blue on hover */
+}
+
+/* Link Container Styles */
+.link-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.link-container div {
+    background-color: #162938; /* Dark blue background */
+    color: white; /* White text */
+    border: 1px solid #1a2d4d; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding around the text */
+    margin: 0 10px; /* Space between containers */
+    text-align: center; /* Center text horizontally */
+    height: 100px; /* Height of each container */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    font-size: 18px; /* Font size for text */
+}
+
+.link-container div a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block-level link */
+}
+
+.link-container div a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Table styling */
+table {
+    width: 80%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #162938;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Add styling for messages */
+p {
+    font-size: 1.2em;
+    color: #ff0000;
+}
+.add-teacher-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; /* Space between groups */
+}
+
+/* Make the input fields and selects longer */
+.add-fee-form form select,
+.add-fee-form form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%; /* Full width */
+    max-width: 400px; /* Adjust this value as needed */
+}
+
+/* Styling for checkbox group */
+
+
+/* Button styling for the add teacher form */
+.add-fee-form form button {
+    width: auto; /* Adjust width if necessary */
+    margin-top: 10px; /* Space above button */
+}
+

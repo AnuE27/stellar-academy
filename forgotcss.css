@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('background6.jpg');
+    background-size: 100% auto;;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #162938;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: 600;
+    color: #162938;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #162938;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: color 0.3s;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: green;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation a:hover {
+    color: green;
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: #162938;
+    border: 2px solid #162938;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    padding: 10px;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.3s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+/* Form Box */
+/* Form Box */
+.form-box {
+    padding: 20px;
+}
+
+/* Ensure the h2 is positioned correctly above the form */
+.form-box h2
+{
+   font-size: 2em;
+   color: #162938;
+   text-align: center;
+}
+
+/* Adjust the input-box margins if needed */
+.input-box {
+    margin-bottom: 20px;
+}
+
+/* Keep input boxes and button styling */
+.input-box input,
+.input-box select {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #162938;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+}
+
+
+.input-box input:focus,
+.input-box select:focus {
+    border-color: #162938;
+}
+
+/* Submit Button */
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #162938;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color:#162938;
+}
+
+
+/* Date Label */
+.date-label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Submit Button */

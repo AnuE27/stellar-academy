@@ -1,0 +1,126 @@
+/* General CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #162938;
+    padding: 20px;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form controls styling */
+form select, form input[type="text"], form button {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Styling for buttons in forms */
+form button {
+    background-color: #162938;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1a2d4d;
+}
+
+/* Styling for tables */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #162938;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Add styling for messages */
+p {
+    font-size: 1.2em;
+    color: #ff0000;
+}
+
+/* Specific styling for schedule management */
+form button[type="submit"] {
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+table input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+table button {
+    background-color: #162938;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table button:hover {
+    background-color: #1a2d4d;
+}
+
+/* Additional styles for better layout and spacing */
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select, input[type="text"] {
+    width: calc(100% - 22px); /* Adjust width considering padding and border */
+}
+
+input[type="hidden"] {
+    display: none;
+}

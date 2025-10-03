@@ -1,0 +1,176 @@
+/* General CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #162938;
+}
+
+/* Form styling */
+form {
+    width: 80%;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Form controls styling */
+form select,
+form input[type="text"],
+form button {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Input text field */
+form input[type="text"] {
+    flex-grow: 1;
+}
+
+/* Button styling */
+form button {
+    background-color: #162938;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform */
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #1a2d4d;
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #162938;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Add styling for messages */
+p {
+    font-size: 1.2em;
+    color: #ff0000;
+}
+
+/* Additional styling for forms inside table */
+table form {
+    margin: 0;
+    display: inline;
+}
+
+/* Label styling */
+
+
+/* Styling for input focus */
+form input[type="text"]:focus,
+form select:focus {
+    border-color: #162938; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Styling for each form group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; /* Space between groups */
+}
+
+/* Styling for checkbox group */
+/* Styling for checkbox group */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap; /* Allow checkboxes to wrap */
+}
+
+/* Align checkboxes nicely and add space */
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkboxes */
+    margin-bottom: 5px; /* Space below checkboxes */
+}
+
+/* Add margin to labels as well for better spacing */
+.checkbox-group label {
+    margin-right: 15px; /* Space between checkbox and label */
+}
+
+
+/* Form button styling */
+.add-teacher-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; /* Space between groups */
+}
+
+/* Make the input fields and selects longer */
+.add-teacher-form form select,
+.add-teacher-form form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%; /* Full width */
+    max-width: 400px; /* Adjust this value as needed */
+}
+
+/* Styling for checkbox group */
+.aform .checkbox-group {
+    display: flex;
+    flex-wrap: wrap; /* Allow checkboxes to wrap */
+}
+
+/* Align checkboxes nicely and add space */
+.aform .checkbox-group input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkboxes */
+    margin-bottom: 5px; /* Space below checkboxes */
+}
+
+/* Add margin to labels for better spacing */
+.aform .checkbox-group label {
+    margin-right: 15px; /* Space between checkbox and label */
+}
+
+/* Button styling for the add teacher form */
+.aform form button {
+    width: auto; /* Adjust width if necessary */
+    margin-top: 10px; /* Space above button */
+}

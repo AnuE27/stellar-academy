@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('background4.jpg');
+    background-size: cover; /* Changed to cover for full background */
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #162938;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: 600;
+    color: #162938;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #162938;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: color 0.3s;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: green;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation a:hover {
+    color: green;
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: #162938;
+    border: 2px solid #162938;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    padding: 10px;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.3s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+section.heading-page {
+    background-image: url('heading.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 60px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+section.text-section {
+    background-image: url('background2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 20px;
+    text-align: center;
+    color: black;
+    width: 100%;
+    position: relative;
+    margin-top: -50px; /* Adjusted margin to overlap with the section above */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between boxes */
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+section.text-section h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+section.text-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+section.text-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section.text-section ul li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.main-banner {
+    position: relative;
+    width: 100%; /* Make sure the banner takes the full width */
+    height: 60vh; /* Adjust the height as necessary */
+    overflow: hidden;
+    margin-bottom: -7px;
+}
+
+#bg-video {
+    width: 100%; /* Make sure the video takes the full width */
+    height: 100%; /* Ensure the video covers the entire height of the container */
+    object-fit: cover;
+    z-index: -1;
+}
+  
+#bg-video::-webkit-media-controls {
+    display: none !important;
+}
+  
+.video-overlay {
+    position: absolute;
+    background-color: rgba(31,39,43,0.75);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+.main-banner .caption {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+  
+.main-banner .caption h6 {
+    font-size: 2em; /* Make the text larger */
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+  
+  .main-banner .caption h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  
+  .main-banner .caption h2 em {
+    font-style: normal;
+    color: #f5a425;
+    font-weight: 900;
+  }
+  
+  .main-banner .caption p {
+    color: #fff;
+    font-size: 14px;
+    max-width: 570px;
+  }
+  
+  .main-banner .caption .main-button-red {
+    margin-top: 30px;
+  }
+  
+  @media screen and (max-width: 767px) {
+  
+    .main-banner .caption h6 {
+      font-weight: 500;
+    }
+  
+    .main-banner .caption h2 {
+      font-size: 36px;
+    }
+  
+  }
+  
